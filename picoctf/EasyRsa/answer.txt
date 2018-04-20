@@ -1,0 +1,8 @@
+openssl to find exponent and modulus
+
+needs yafu to run prime factorization
+yafu is obnoxious, can't get gmp ecm to install on mac
+
+once you have the factors, run python script
+
+FLAG{R5A_i5_n00b}

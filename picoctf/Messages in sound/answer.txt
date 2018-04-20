@@ -1,0 +1,6 @@
+open in sonic visualiser
+
+Layer -> add spectrogram -> channel 2
+
+
+FLAG{^_L3eD1e_1E3d1e_13e}

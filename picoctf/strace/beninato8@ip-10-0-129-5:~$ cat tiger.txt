@@ -1,0 +1,10 @@
+beninato8@ip-10-0-129-5:~$ cat tiger.txt
+Tiger got to hunt, bird got to fly;
+Man got to sit and wonder 'why, why, why?'
+Tiger got to sleep, bird got to land;
+Man got to tell himself he understand.
+beninato8@ip-10-0-129-5:~$ cat mytiger.txt
+Tiger got to hunt, bird got to fly;
+Man got to sit and wonder 'why, why, why?'
+Tiger got to sleep, bird got to land;
+Man got to tell himself he understand.
