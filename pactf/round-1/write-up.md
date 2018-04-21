@@ -182,7 +182,7 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Flag**:
 
-##Beats by Dr. K  (55 points)
+## Beats by Dr. K (55 points)
  - **Clue**: Dr. K just released her new EP — download her [track](Beats-by-Dr-K/bits.675c46a10049.wav) now!
 
  - **Hint**: Listen to each bit…
@@ -195,7 +195,7 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Flag**:
 
-##The Lottery, Part One: Spill Your Heart Out! (65 points)
+## The Lottery, Part One: Spill Your Heart Out! (65 points)
  - **Clue**: I was playing [this](Lotter-1/output.81ed5b400225) lottery. Which number is going to win next time? If only you could see into the future…
 
  - **Hint**: Brought to you by *Oracle Corporation!* Spill your heart out!
@@ -208,7 +208,7 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Flag**:
 
-##The Lottery, Part Two: Untwisting Fate! (90 points)
+## The Lottery, Part Two: Untwisting Fate! (90 points)
  - **Clue**: This time the lottery is harder than ever! Can you manage to untwist the cockles of fate itself? Can you see into the future?
 
     [They seem to have given me a lot more information. Perhaps it’ll help?](Lottery-1/output.9327e404be0e)
@@ -223,7 +223,7 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Flag**:
 
-##Siblings (120 points)
+## Siblings (120 points)
  - **Clue**: One 4096-bit RSA key is impossible to break, so 20 must be even better! By chaining each encryption together, surely it’s impossible for you to figure out what the message is?
 
     [Everything you’ll need (except the private keys, you’re on your own for that!)](Siblings/problem-data.e34ba61084c2.zip)
