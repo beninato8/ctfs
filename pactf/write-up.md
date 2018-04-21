@@ -1,3 +1,4 @@
+
 # PACTF 2018 Write Up
 
 My first CTF competion!
@@ -128,6 +129,42 @@ This problem builds off of a similarly named problem in PACTF 2017.
 
      - [Chromium Code Search](https://cs.chromium.org/)
      - [Chromium Repository](https://github.com/chromium/chromium)
+
+ - **Solution**:
+
+ - **Flag**:
+
+## Credit Card Leak (35 points)
+ - **Clue**:
+ShoeShop was hacked, and all of their customer records were released online—including credit card numbers. One credit card in the leak is invalid, however. What is the invalid credit card number?
+
+    Here’s the leak: [cc_leak.txt.bz2](Credit-Card-Leak/cc_leak.txt.eecc6f896436)
+
+ - **Hint**:
+The credit card numbers in the leak are obviously all invalid, but most would pass a certain credit card validity test. All credit card numbers except one, that is.
+
+ - **Category**:
+
+ - **Outside resources**:
+
+ - **Solution**:
+
+ - **Flag**:
+
+## Third Eye (40 points)
+ - **Clue**:
+Sometimes​‌‌‌​‌‌‌​‌‌​ there‌​​​​‌‌​​​​‌ is ​‌‌‌​‌​​​‌​‌‌‌more ‌‌​‌‌​​‌​‌​‌‌​‌‌​​​‌‌‌​​‌‌​‌‌​​‌​‌​‌​‌‌‌‌‌​‌‌​‌‌​​​‌‌‌​‌​‌​‌‌‌​​‌​​‌‌​‌​‌‌​‌‌‌​​‌‌​‌​‌‌‌‌‌​‌‌​​​‌than ​​‌‌​​‌​‌​‌‌​‌‌meets ‌​​‌‌​​‌​‌​‌‌​​​the ​‌​‌‌‌​‌​​​‌‌​‌​​​​‌​‌‌‌‌‌​‌‌‌eye​‌​​​‌‌​‌​​​​‌‌​​‌​‌​‌​‌‌‌‌‌​‌‌​​‌​‌​‌‌‌‌​​‌​‌‌​​‌​‌.
+
+ - **Hint**:
+Maybe if you just squint harder…
+
+ - **Category**:
+
+ - **Outside resources**:
+
+    - You are on the [PACTF website](https://2018.pactf.com/game/Lovelace/). [Here](./Game-PACTF.htm) is a local copy.
+    - [https://codepen.io/chriscoyier/pen/iLKwm](https://codepen.io/chriscoyier/pen/iLKwm)
+    - Inspect Element > Edit as HTML
 
  - **Solution**:
 
