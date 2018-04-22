@@ -9,13 +9,15 @@ Apparently there is something hidden in this [image](A-Picture-is-a-Thousand-Wor
 
  - **Hint**: You’re looking for text—how might you look at the text of the image?
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Steganography(ish)
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- flag_is_DjKVIXXQRZZrrAd -->
 
 ## Straight From The Emperor (10 points)
  - **Clue**: The Emperor says `ny_nx_tsq3_zumnqq_kwtr_mjwj_6a6b59e767`–what could it possibly mean? I hear that he ‘encrypts’ numbers now too, something about appending them to the alphabet…
@@ -23,13 +25,15 @@ Apparently there is something hidden in this [image](A-Picture-is-a-Thousand-Wor
  - **Hint**:
 Some say he’s an emperor, I say he’s a salad.
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Ask Julius Again...
+
+ - **Category**: Ciphers
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- it_is_only_uphill_from_here_1516049212 -->
 
 ## Caesar Cipher? (20 points)
  - **Clue**: “Cowards die many times before their deaths; the valiant only taste of death but once.” (1007, 1008) Are you valiant enough to figure this out?
@@ -38,26 +42,30 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: There’s a lot of text on the Internet and in print. What if you could send messages using all of that data? But you’d have to pick something pretty famous…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Sorry, that isn't correct! Maybe a classic piece of literature would soothe your psyche...
+
+ - **Category**: Other (Google-fu?)
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- Cassius -->
 
 ## Let Me In (20 points)
  - **Clue**: You received this [account.rar](Let-Me-In/account.5a52b336da78.rar) file, but it is ‘protected’ under a password. Can you break in?
 
  - **Hint**: Something tells me the user might not be using complex passwords…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Keep Cracking...
+
+ - **Category**: Cryptography/Steganography
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- rgSueiMYehWJSZPZr -->
 
 ## Go Git It (25 points)
  - **Clue**: The code samurai (also known by his pseudonym Nicholas) was making some final optimizations on his program when… he accidentally decapitated it.
@@ -66,26 +74,30 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: Perhaps ‘chopping a branch off a tree’ would be the more precise analogy. 
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Git
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- 3x3rc1z3_caut10n_wh3n_d3tach1ng_ur_h3ad -->
 
 ## Who Said It? (25 points)
  - **Clue**: The contents of [this](Who-Said-It?/message.txt) file
 
  - **Hint**: Keys live on keyservers.
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Cryptography
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- the_real_answer_is_always_in_the_comments -->
 
 ## Bad Melody (30 points)
  - **Clue**: Our musician friend Martin recently bought a melody pack containing different melodies recorded in MIDI format. He hoped to Outside resources, he only received one MIDI file. It sounded awful, and Martin quickly noticed why!
@@ -96,20 +108,24 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: How would you edit MIDI?
 
- - **Category**:
+ - **Incorrect Flag Hint:**: No :( Why should Martin not buy melody packs?
+
+ - **Category**: Steganography
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- WRITE YOUR OWN MUSIC -->
 
 ## Open Sourcery 2018 (30 points)
  - **Clue**: The solution to this problem lies within the Chromium source code. Literally. There is some string in there that mentions a flag and PACTF…
 
  - **Hint**: This problem builds off of a similarly named problem in PACTF 2017.
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Keep searching, we're in there somewhere!
+
+ - **Category**: Other 
 
  - **Outside resources**:
 
@@ -118,7 +134,7 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- pactf-flag-4boxdpa21ogonzkcrs9p.com -->
 
 ## Credit Card Leak (35 points)
  - **Clue**: ShoeShop was hacked, and all of their customer records were released online—including credit card numbers. One credit card in the leak is invalid, however. What is the invalid credit card number?
@@ -127,20 +143,24 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: The credit card numbers in the leak are obviously all invalid, but most would pass a certain credit card validity test. All credit card numbers except one, that is.
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Scripting
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- 8692015931457397 -->
 
 ## Third Eye (40 points)
  - **Clue**: Sometimes​‌‌‌​‌‌‌​‌‌​ there‌​​​​‌‌​​​​‌ is ​‌‌‌​‌​​​‌​‌‌‌more ‌‌​‌‌​​‌​‌​‌‌​‌‌​​​‌‌‌​​‌‌​‌‌​​‌​‌​‌​‌‌‌‌‌​‌‌​‌‌​​​‌‌‌​‌​‌​‌‌‌​​‌​​‌‌​‌​‌‌​‌‌‌​​‌‌​‌​‌‌‌‌‌​‌‌​​​‌than ​​‌‌​​‌​‌​‌‌​‌‌meets ‌​​‌‌​​‌​‌​‌‌​​​the ​‌​‌‌‌​‌​​​‌‌​‌​​​​‌​‌‌‌‌‌​‌‌‌eye​‌​​​‌‌​‌​​​​‌‌​​‌​‌​‌​‌‌‌‌‌​‌‌​​‌​‌​‌‌‌‌​​‌​‌‌​​‌​‌.
 
  - **Hint**: Maybe if you just squint harder…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Web
 
  - **Outside resources**:
 
@@ -150,20 +170,22 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- what_else_lurks_beneath_the_eye -->
 
 ## Getting to Know GDB (50 points)
  - **Clue**: A friend sent me a [mysterious binary](/Getting-to-Know-GDB/mysterious_elf771c3c9447cd). It’s supposed to print out the flag, but it’s giving me a weird poem and some hex instead.
 
  - **Hint**: The flag is *in there somewhere*, but something gives me the feeling that searching the binary for strings wont help…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Executables
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- why_use_breakpoints_if_you_have_good_timing -->
 
 ## Security Through Obscurity? (50 points)
  - **Clue**: We intercepted this message, but we can’t make heads or tails of it. It was rattled off so fast, too… How could anyone be that good at using a cipher?
@@ -174,54 +196,62 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: This definitely doesn’t look like English. What else could it be? Perhaps looking through the history books might help…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: No dice! Nada! Nil! Falsa! Erroné!
+
+ - **Category**: Ciphers
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- CHESTERNEZ -->
 
 ## Beats by Dr. K (55 points)
  - **Clue**: Dr. K just released her new EP — download her [track](Beats-by-Dr-K/bits.675c46a10049.wav) now!
 
  - **Hint**: Listen to each bit…
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Well, at least this piece has some nice bits...
+
+ - **Category**: Steganography
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- pactfmusic -->
 
 ## The Lottery, Part One: Spill Your Heart Out! (65 points)
  - **Clue**: I was playing [this](Lotter-1/output.81ed5b400225) lottery. Which number is going to win next time? If only you could see into the future…
 
  - **Hint**: Brought to you by *Oracle Corporation!* Spill your heart out!
 
- - **Category**:
+ - **Incorrect Flag Hint:**: My heart remains closed off...
+
+ - **Category**: Scripting/Algorithmns
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- -632232200 -->
 
 ## The Lottery, Part Two: Untwisting Fate! (90 points)
  - **Clue**: This time the lottery is harder than ever! Can you manage to untwist the cockles of fate itself? Can you see into the future?
 
-    [They seem to have given me a lot more information. Perhaps it’ll help?](Lottery-1/output.9327e404be0e)
+    [They seem to have given me a lot more information. Perhaps it’ll help?](Lottery-2/output.9327e404be0e)
 
  - **Hint**: We may regard the present state of the universe as the effect of its past and the cause of its future. An intellect which at a certain moment would know all forces that set nature in motion, and all positions of all items of which nature is composed, if this intellect were also vast enough to submit these data to analysis, it would embrace in a single formula the movements of the greatest bodies of the universe and those of the tiniest atom; for such an intellect nothing would be uncertain and the future just like the past would be present before its eyes. — Pierre Simon Laplace, A Philosophical Essay on Probabilities
 
- - **Category**:
+ - **Incorrect Flag Hint:**: Fate remains untwisted! Is there any way to master random chance itself...
+
+ - **Category**: Scripting/Algorithmns
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- 3956993139 -->
 
 ## Siblings (120 points)
  - **Clue**: One 4096-bit RSA key is impossible to break, so 20 must be even better! By chaining each encryption together, surely it’s impossible for you to figure out what the message is?
@@ -230,10 +260,12 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Hint**: Numbers don’t have siblings, right? What could that mean?
 
- - **Category**:
+ - **Incorrect Flag Hint:**: None
+
+ - **Category**: Cryptography
 
  - **Outside resources**:
 
  - **Solution**:
 
- - **Flag**:
+ - **Flag**: <!--- t00 many c00ks sp0il the br0th -->
