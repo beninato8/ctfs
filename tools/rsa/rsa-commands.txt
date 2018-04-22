@@ -1,0 +1,1 @@
+openssl rsa -pubin -inform PEM -text -noout < public.key
