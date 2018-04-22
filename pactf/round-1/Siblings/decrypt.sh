@@ -1,3 +1,4 @@
+#!/bin/sh
 cp unbreakable_code d20
 for i in {19..1}; do 
     # echo "**"
