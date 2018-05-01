@@ -373,6 +373,7 @@ Some say he’s an emperor, I say he’s a salad.
     - [Tutorial](https://www.youtube.com/watch?v=sYCzu04ftaY)
     - [Wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation)
     - [Pycrypto](https://www.dlitz.net/software/pycrypto/)
+    - [Openssl Help](https://www.devco.net/archives/2006/02/13/public_-_private_key_encryption_using_openssl.php)
 
  - <details>
     <summary><strong>Solution</strong>:</summary>
