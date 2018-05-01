@@ -1,1 +1,3 @@
-# ctfs
+# CTFS
+
+CTF stuff and things
