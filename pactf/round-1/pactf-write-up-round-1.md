@@ -1,7 +1,9 @@
 
 # PACTF 2018 Round 1 Write Up
 
-My first CTF competion!
+This is a write-up for [PACTF 2018 Round 1](https://2018.pactf.com/game/Lovelace/)
+
+My first CTF competion! Please raise an issue if a link is broken or the instructions are unclear.
 
 ## A Picture is a Thousand Words (10 points)
  - **Clue**:
@@ -121,14 +123,16 @@ Some say he’s an emperor, I say he’s a salad.
 
  - **Outside resources**: 
 
- - [GPG](https://releases.gpgtools.org/GPG_Suite-2018.1.dmg)
- - [Public Key Server](https://pgp.mit.edu/)
+    - [GPG](https://www.gnupg.org/download/index.html)
+    - [Public Key Server](https://pgp.mit.edu/)
 
  - <details>
     <summary><strong>Solution</strong>:</summary>
  
 
-    The problems are starting to get a little bit tougher now. You are given a PGP message and the signature. You can assume that you probably want the key that signed the message, as the hint tells you that keys live on keyservers. The MIT key server is a good place to look, as it is a common place to store public keys. In order to find a key, however, [the server needs](https://pgp.mit.edu/extracthelp.html) a KeyID. To get an ID from a PGP message and signature, we can use GPG. [This](https://security.stackexchange.com/a/63079) SO answer explains how to get a public key from a signature. So, if we run `gpg -vv` (-vv is extra verbose), we can now paste in the message and signature. And, right at the end, we can see a KeyID! Just throw that at the keyserver, and you get the flag (just make sure to read the [instructions](https://pgp.mit.edu/) for how to extract a key)
+    The problems are starting to get a little bit tougher now. For this one, you are given a PGP message and the signature. You can assume that you probably want the key that signed the message, as the hint tells you that keys live on keyservers. The MIT key server is a good place to look, as it is a common place to store public keys. 
+
+    In order to find a key, however, [the server needs](https://pgp.mit.edu/extracthelp.html) a KeyID. To get an ID from a PGP message and signature, we can use GPG. [This](https://security.stackexchange.com/a/63079) SO answer explains how to get a public key from a signature. So, if we run `gpg -vv` (-vv is extra verbose), we can now paste in the message and signature. And, right at the end, we can see a KeyID! Just throw that at the keyserver, and you get the flag (just make sure to read the [instructions](https://pgp.mit.edu/extracthelp.html) for how to extract a key)
 
     If you want to show off your bash skills, you can redirect stdin and stdout to use the message as your input, and then pass all the output to grep to get your id, and then dump the rest in the trash
 
@@ -181,7 +185,7 @@ Some say he’s an emperor, I say he’s a salad.
 
     So, you could try searching all that source code on your own with chromium's own search page, or, if you have an extra few gigs to spare, just clone their repo and grep all that for pactf. No need to spend any time on a problem if your laptop can do it while you get a snack.
 
-    All you need to do is recursively (I made it case insensitive just to be thorough as well) grep the chromium repo, and then search that output for 'flag' 
+    All you need to do is recursively (I made it case insensitive just to be thorough) grep the chromium repo, and then search that output for 'flag'. 
 
     `grep -i -r "pactf" . | grep flag`
 
@@ -205,15 +209,17 @@ Some say he’s an emperor, I say he’s a salad.
     This is another simple one. The defacto "credit card validity check" is the [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm). So write a script that checks all the numbers.
 
     Psuedo code:
+    
+    ```python
+    def passes_luhn_check(int num):
+        # implement luhn algorithm
+        # return boolean
 
-        def passes_luhn_check(int num):
-            # implement luhn algorithm
-            # return boolean
-
-        file = open('ccnums.txt')
-        for ccnum in file:
-            if not passes_luhn_check(ccnum):
-                print(ccnum)
+    file = open('ccnums.txt')
+    for ccnum in file:
+        if not passes_luhn_check(ccnum):
+            print(ccnum)
+    ```
 
 
     </details>
@@ -241,7 +247,7 @@ Some say he’s an emperor, I say he’s a salad.
  - **Flag**: <!--- what_else_lurks_beneath_the_eye -->
 
 ## Getting to Know GDB (50 points)
- - **Clue**: A friend sent me a [mysterious binary](/Getting-to-Know-GDB/mysterious_elf771c3c9447cd). It’s supposed to print out the flag, but it’s giving me a weird poem and some hex instead.
+ - **Clue**: A friend sent me a [mysterious binary](Getting-to-Know-GDB/mysterious_elf771c3c9447cd). It’s supposed to print out the flag, but it’s giving me a weird poem and some hex instead.
 
  - **Hint**: The flag is *in there somewhere*, but something gives me the feeling that searching the binary for strings wont help…
 
@@ -257,7 +263,9 @@ Some say he’s an emperor, I say he’s a salad.
     </p>
 
 
-    I couldn't figure out how to get GDB to run on Mac, and I couldn't figure out how to use it on my Ubuntu VM. However, I was able to use Hopper to find the answer in the disassembled code. If you open the binary with Hopper, you can see an interesting item in the strings section. If you view the references to that string (right click it), you can see the assembly code instructions, and their are some hex values underneath that string that look to be in the range of ASCII characters...
+    I couldn't figure out how to get GDB to run on Mac, and I didn't want to spend a ton of time learning how to use it on my Ubuntu VM. However, I was able to use Hopper to find the answer in the disassembled code. 
+
+    If you open the binary with Hopper, you can see an interesting item in the strings section. If you view the references to that string (right click it), you can see the assembly code instructions, and their are some hex values underneath that string that look to be in the range of ASCII characters...
 
     Thanks to [adbforlife](https://github.com/adbforlife) for telling me to look under the string for the rest of the flag.
     </details>
@@ -283,7 +291,7 @@ Some say he’s an emperor, I say he’s a salad.
  - <details>
     <summary><strong>Solution</strong>:</summary>
     
-    At a first glance, it looks like this is some foreign language. The clue and hint both suggest a historical context, and a famous language used to "encrypt" messages was Navajo, which was used by the [US military during WWII](https://en.wikipedia.org/wiki/Code_talker#Navajo_code_talkers). Even if you didn't know the historical significance, you could just for the ciphertext, and the first result gives you a [gist](https://gist.github.com/TheZ3ro/572ef81c0f20bf9c4c435b32a62a7056) to decode the message
+    At a first glance, it looks like this is some foreign language. The clue and hint both suggest a historical context, and a famous language used to "encrypt" messages was Navajo, which was used by the [US military during WWII](https://en.wikipedia.org/wiki/Code_talker#Navajo_code_talkers). Even if you didn't know the historical significance, you could just search for the ciphertext, and the first result gives you a [gist](https://gist.github.com/TheZ3ro/572ef81c0f20bf9c4c435b32a62a7056) to decode the message.
 
     </details>
  - **Flag**: <!--- CHESTERNEZ -->
@@ -319,7 +327,7 @@ Some say he’s an emperor, I say he’s a salad.
  - <details>
     <summary><strong>Solution</strong>:</summary>
     
-    I figured out the second lottery before this one, and in my research, I found [this](https://jazzy.id.au/2010/09/20/cracking_random_number_generators_part_1.html) site. If this problem was anything like the previous one, I was going to have to exploit a flaw in Java's PRNG using only 2 numbers. Given the infomation from the aforementioned, a quick search turned up [this](https://github.com/fta2012/ReplicatedRandom/blob/master/ReplicatedRandom.java#L23) script, which gives you the answer.
+    I figured out the second lottery before this one, and in my research, I found [this](https://jazzy.id.au/2010/09/20/cracking_random_number_generators_part_1.html) site. If this problem was anything like the previous one, I was going to have to exploit a flaw in Java's PRNG using only 2 numbers. Given the infomation from the aforementioned site, a quick search turned up [this](https://github.com/fta2012/ReplicatedRandom/blob/master/ReplicatedRandom.java#L23) script, which gives you the answer.
 
 
     </details>
@@ -344,7 +352,7 @@ Some say he’s an emperor, I say he’s a salad.
  - <details>
     <summary><strong>Solution</strong>:</summary>
 
-    This one left me stumped for quite a while, but I got a lucky break when Vivian send me a [screenshot](Lottery-2/keeton.png) of Keeton's story, where he posted all I needed to know to solve this problem. This problem is based on exploiting a flaw in Python's RNG, which uses the [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister) to generate numbers. Without using Keeton's help, you were supposed to figure this out by the word "twister" in the title/clue, and knowing how Python's random module works. Luckily for me, Keeton provided the exact name of a program that would work for me, but a quick search for a Mersenne Twister Predictor will also let you find it. Simply run the script as suggested in the README, and you're good to go.
+    This one left me stumped for quite a while, but I got a lucky break when Vivian send me a [screenshot](Lottery-2/keeton.png) of Keeton's story, where he posted all I needed to know to solve this problem. This problem is based on exploiting a flaw in Python's RNG, which uses the [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister) to generate numbers. Without using Keeton's help, you were supposed to figure this out by the word "twister" in the title/clue, and knowing how Python's random module works. Luckily for me, Keeton provided the exact name of a program that would work for me, but a quick search for a Mersenne Twister Predictor will also let you find it. Simply run the script as instructed in the README, and you're good to go.
 
     </details>
  - **Flag**: <!--- 3956993139 -->
@@ -369,8 +377,10 @@ Some say he’s an emperor, I say he’s a salad.
  - <details>
     <summary><strong>Solution</strong>:</summary>
     
-    Now this was a fun one! Heading into it, I knew absolutely nothing about RSA or any sort of encryption. To start of, I watched the youtube video a couple times. It does a great job explaining everything you need to know, and it is in the context of CTF as well. I reccomend watching the *whole* thing, not just skimming through. Once I had an idea of what I needed to do, I wrote a python script to factor the public keys by finding the gcds between them. Using PyCrypto, I was able to get n, p, q, e, and d for each public key, which let me find the private keys. I then used openssl to decrypt the ciphertext using each key, and after the last one, you get the flag. If you are still confused, I highly recommend watching the youtube video. It explains everything that you need to know to get started.
+    Now this was a fun one! Heading into it, I knew absolutely nothing about RSA or any sort of encryption. To start of, I watched the youtube video a couple times. It does a great job explaining everything you need to know, and it is in the context of CTF as well. I reccomend watching the *whole* thing, not just skimming through. 
 
-    Special thanks to my Russian friend [Alex](https://github.com/loqpa) for showing me the youtube video
+    Once I had an idea of what I needed to do, I wrote a python script to factor the public keys by finding the gcds between them. Using PyCrypto, I was able to get n, p, q, e, and d for each public key, which let me find the private keys. I then used openssl to decrypt the ciphertext using each key, and after the last one, you get the flag. If you are still confused, I highly recommend watching the youtube video. It explains everything that you need to know to get started.
+
+    Special thanks to my Russian friend [Alex](https://github.com/loqpa) for showing me the youtube video.
     </details>
  - **Flag**: <!--- t00 many c00ks sp0il the br0th -->
