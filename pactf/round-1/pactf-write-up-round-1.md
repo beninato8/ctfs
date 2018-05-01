@@ -39,7 +39,9 @@ Some say he’s an emperor, I say he’s a salad.
     <summary><strong>Solution</strong>:</summary>
  
 
-    Looking at this text, you can see its probably some kind of cipher. The underscores look like they split up the words. A common cipher is a [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher). The hint confirms that, as Caesar is both a salad, and a Roman Emperor. Now that we know the type of cipher, we need a custom alphabet so the numbers fit in, as a normal Caesar Cipher only has the 26 letters. The clue mentions appending numbers to the alphabet so we just need to add the numbers to the end. The site above allows you to have a custom alphabet, so just use the letters in the cipher as your alphabet (abcdefghijklmnopqrstuvwxyz0123456789). Scroll through the answers and one of them makes sense.
+    Looking at this text, you can see its probably some kind of cipher. The underscores look like they split up the words. A common cipher is a [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher). The hint confirms that, as Caesar is both a salad, and a Roman Emperor. 
+
+    Now that we know the type of cipher, we need a custom alphabet so that the numbers fit in, as a normal Caesar Cipher only has the 26 letters. The clue mentions appending numbers to the alphabet, so we just need to add the numbers to the end of the alphabet for the cipher. The site linked above allows you to have a custom alphabet, so just use the letters in the cipher as your alphabet (abcdefghijklmnopqrstuvwxyz0123456789). Scroll through the answers and one of them makes sense (make your you get your capitalization correct!).
 
 
     </details>
@@ -81,7 +83,7 @@ Some say he’s an emperor, I say he’s a salad.
     <summary><strong>Solution</strong>:</summary>
  
 
-    This one isn't too hard, it just involves guessing a password. The hint tells us it is a [simple password](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords), so if we try some of these out we get the password, and the text file inside has the flag
+    This one isn't too hard, it just involves guessing a password. The hint tells us it is a [simple password](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords), so if we try some of these out we get the password, and the text file inside gives us the flag.
 
 
     </details>
@@ -102,14 +104,16 @@ Some say he’s an emperor, I say he’s a salad.
     <summary><strong>Solution</strong>:</summary>
 
 
-    This one might be a little tougher without a knowledge of how to use git. You should have some experience if you've ever submitted an assigment to your repository. The hint tells us we should be looking in a previous branch of the repo. [If only there was a way to see the previous branches](https://git-scm.com/docs/git-reflog). That interesting commit message suggests that we might want to look at that commit. If the flag was in there, you might want to see the [differences](https://git-scm.com/docs/git-diff) between the repo now and then, as the flag was probably deleted. To find the flag in all that text, just pipe the output into grep: `git diff [hash] | grep flag`
+    This one might be a little tougher without a knowledge of how to use git. You should have some experience if you've ever submitted an assigment to your repository. 
+
+    The hint tells us we should be [looking in a previous branch of the repo](https://git-scm.com/docs/git-reflog). The interesting commit message that is displayed suggests that we might want to look at the contents commit. If the flag was in there, you might want to see the [differences](https://git-scm.com/docs/git-diff) between the repo now and then, as the flag was probably deleted. To find the flag in all that text, just pipe the output into grep: `git diff [commit hash] | grep flag`
 
 
     </details>
  - **Flag**: <!--- 3x3rc1z3_caut10n_wh3n_d3tach1ng_ur_h3ad -->
 
 ## Who Said It? (25 points)
- - **Clue**: The clue was just the contents of [this](Who-Said-It?/message.txt) file
+ - **Clue**: The clue was just the contents of [this](Who-Said-It/message.txt) file
 
  - **Hint**: Keys live on keyservers.
 
